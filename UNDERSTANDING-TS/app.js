@@ -24,7 +24,7 @@ var person = {
     name: 'hyundong',
     age: 25,
     hobbies: ['Sports', 'Cooking'],
-    role: Role.AUTHOR
+    role: Role.ADMIN
 };
 // person.role.push('admin') // 타입스크립트가 잡지 못하는 error case
 // person.role[1] = 0; // 타입스크립트가 잡는 error case
