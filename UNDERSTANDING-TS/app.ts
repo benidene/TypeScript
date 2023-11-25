@@ -17,7 +17,7 @@ function combine( // 리터럴 타입을 사용하면 문자열이나 숫자에 
  }
 
     const combinedAges = combine(30, 26, 'as-number');
-    console.log(combinedAges);
+    console.log(combinedAges);;
 
     const combinedStringAges = combine('30', '26', 'as-number');
     console.log(combinedStringAges);
