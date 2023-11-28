@@ -1,7 +1,11 @@
-function combine( // 리터럴 타입을 사용하면 문자열이나 숫자에 정확한 값을 지정할 수 있다.
-    input1: number | string , 
-    input2: number | string, 
-    resultConversion: 'as-number' | 'as-text' // 리터럴 타입이자 유니언 타입
+type combinable = number | string; // Type Aliases란 타입을 지칭해 줄수있다. 보통 유니언타입과 합쳐서 사용한다.
+type ConversionDescriptor = 'as-number' | 'as-text' // 리터럴 타입이자 유니언 타입( | )이자 타입 알리어스( type ConversionDescriptor )
+    // 리터럴 타입('as-number')을 사용하면 문자열이나 숫자에 정확한 값을 지정할 수 있다.
+
+function combine(
+    input1: combinable, 
+    input2: combinable, 
+    resultConversion: ConversionDescriptor 
     ) {
     let result;
     if(typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
