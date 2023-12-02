@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+  "compilerOptions": { // 타입스크립트 코드를 컴파일하는 방법을 제어할 수 있는 옵션
     /* Basic Options */
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
@@ -56,5 +56,16 @@
     /* Experimental Options */
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-  }
+  },
+    // "exclude": [ exclude 배열에 파일명을 넣으면 tsc를 넣어도 js파일이 생기지않는다. 컴파일러가 감시하지 않음!
+    // "node_modules" exclude 배열을 추가하지 않으면 알아서 node_modules가 제외되어있다. 기본설정! 하지만 배열을 추가하게 되면 node_modules도 꼭 추가해줘야한다.
+    // "*.dev.ts"  ~dev.ts가 붙어있는 파일은 제외된다.
+    // "**/*.dev.ts" ~dev.ts가 붙어있는 모든 지역의 폴더들이 전부 제외된다.
+    // ],
+    // "include": [ include를 설정하려면 컴파일 하려는 모든 파일을 집어 넣어줘야 한다.
+    //  exclude와 include에 전부 작성하면 exclude가 이긴다.
+    // ],
+  // "files": [ files는 include와 비슷하지만 여기선 개별 파일만 적용 시킬 수 있다.(include는 폴더도 지정 가능함)
+  // 
+  // ]
 }
