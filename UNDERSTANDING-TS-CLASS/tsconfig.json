@@ -9,6 +9,7 @@
       "dom.iterable",
       "scripthost"
     ],                             /* Specify library files to be included in the compilation. */
+    // "moduleDetection": "force",            /*블록 범위 변수 '[변수명]'을(를) 다시 선할 수 없습니다. ts(2451)
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
     // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
